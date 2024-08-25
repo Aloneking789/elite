@@ -63,6 +63,9 @@ The platform uses a RESTful API to manage project-related routes, including crea
 
 - **User Profile (`/projects/profile`)**:
   - **GET**: Displays the user's profile with a list of their projects.
+ 
+
+![Architecture Flow Diagram](https://github.com/user-attachments/assets/396d934d-67e5-458d-afaf-5ff5e40d4fd1)
 
 ## How to Collaborate
 
