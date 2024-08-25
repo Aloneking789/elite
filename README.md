@@ -87,3 +87,22 @@ We welcome contributions to CollabSphere! Please follow these steps:
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a new Pull Request.
 
+### Justification
+- Chosen to address the lack of integrated collaboration features in existing project management tools.
+- Aims to provide a comprehensive platform for seamless project management and team collaboration.
+
+### Architecture/Flow/Ideation
+- Built using a **React** frontend, **Node.js** and **Express** backend, and **MongoDB** database.
+- Follows **MVC (Model-View-Controller)** architecture for structured development.
+- Features include user authentication, project and task management, and real-time collaboration via **WebSockets**.
+
+### Existing Solutions
+- Existing tools like **Trello**, **Asana**, and **Slack** focus on either task management or communication.
+- **CollabSphere** combines both functionalities in one integrated platform.
+
+### Uniqueness
+- Provides a unified platform that integrates task management, real-time collaboration, and communication.
+- Offers a user-friendly design and customizable workflows, suitable for teams of all sizes.
+- Enhances both productivity and collaboration with scalable architecture.
+
+
