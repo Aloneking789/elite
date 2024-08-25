@@ -37,7 +37,7 @@ Create a `.env` file in the root directory of your project and add the necessary
 
 To start the application, use the command:
 
-```bash
+
 npm start
 ## Access the Application
 
