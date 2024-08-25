@@ -65,7 +65,6 @@ The platform uses a RESTful API to manage project-related routes, including crea
   - **GET**: Displays the user's profile with a list of their projects.
  
 
-![Architecture Flow Diagram](https://github.com/user-attachments/assets/396d934d-67e5-458d-afaf-5ff5e40d4fd1)
 
 ## How to Collaborate
 
@@ -95,6 +94,8 @@ We welcome contributions to CollabSphere! Please follow these steps:
 - Built using a **React** frontend, **Node.js** and **Express** backend, and **MongoDB** database.
 - Follows **MVC (Model-View-Controller)** architecture for structured development.
 - Features include user authentication, project and task management, and real-time collaboration via **WebSockets**.
+
+  ![Architecture Flow Diagram](https://github.com/user-attachments/assets/396d934d-67e5-458d-afaf-5ff5e40d4fd1)
 
 ### Existing Solutions
 - Existing tools like **Trello**, **Asana**, and **Slack** focus on either task management or communication.
