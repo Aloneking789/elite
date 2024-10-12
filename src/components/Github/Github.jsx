@@ -3,41 +3,31 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const members = [
     { 
-        name: 'Tony Stark', 
-        logo: 'https://via.placeholder.com/50', 
-        github: '#', 
-        instagram: '#', 
-        linkedin: '#' },
+        name: 'Vishnu Dubey', 
+        logo: 'https://avatars.githubusercontent.com/u/113883504?v=4', 
+        github: 'https://github.com/vishnuzdubey', 
+        instagram: 'https://i.ytimg.com/vi/f3rMANl9lP4/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG-AoACzAGKAgwIABABGEEgTChlMA8=&rs=AOn4CLD7aV8ahTHzbgf5tkfwkGC-3dCeKw', 
+        linkedin: '#https://www.linkedin.com/in/vishnu-dubey-2423b0254/' },
     { 
-        name: 'Thor Odinson', 
-        logo: 'https://via.placeholder.com/50', 
-        github: '#', 
-        instagram: '#', 
-        linkedin: '#' },
+        name: 'Abhay Pandey', 
+        logo: 'https://avatars.githubusercontent.com/u/116704975?v=4', 
+        github: 'https://github.com/aloneking789', 
+        instagram: 'http://whiterose.infinityfreeapp.com/', 
+        linkedin: 'https://www.linkedin.com/in/abhay-pandey-595818253/' },
     { 
-        name: 'Bruce Banner', 
-        logo: 'https://via.placeholder.com/50', 
-        github: '#', 
-        instagram: '#', 
-        linkedin: '#' },
+        name: 'Abhijeet Gupta', 
+        logo: 'https://avatars.githubusercontent.com/u/129390867?v=4', 
+        github: 'https://github.com/ag21o9', 
+        instagram: 'https://leetcode.com/u/Abhijeet21o9/', 
+        linkedin: 'https://www.linkedin.com/in/abhijeet-gupta-552ba5208/' 
+    },
+
     { 
-        name: 'Steve Rogers', 
-        logo: 'https://via.placeholder.com/50', 
-        github: '#', 
+        name: 'Vaishnavi Singh', 
+        logo: 'https://avatars.githubusercontent.com/u/173715475?v=4', 
+        github: 'https://github.com/vaishnavizsingh', 
         instagram: '#', 
-        linkedin: '#' },
-    { 
-        name: 'Clint Barton', 
-        logo: 'https://via.placeholder.com/50', 
-        github: '#', 
-        instagram: '#', 
-        linkedin: '#' },
-    { 
-        name: 'Natasha Romanoff', 
-        logo: 'https://via.placeholder.com/50', 
-        github: '#', 
-        instagram: '#', 
-        linkedin: '#' },
+        linkedin: 'https://www.linkedin.com/in/vaishnavi-singh-33a5b2271/' },
 ];
 
 function Github() {
