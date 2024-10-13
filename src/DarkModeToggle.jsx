@@ -6,9 +6,15 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`${darkMode?" text-white":" text-black"}`}
+      className={`w-14 h-8 flex items-center rounded-full p-1 
+        ${darkMode ? 'bg-gray-500' : 'bg-gray-300'} 
+        transition-colors duration-500 ease-in-out`}
     >
-      {darkMode ? 'Light Mode' : 'Dark Mode'}
+      <div
+        className={`w-6 h-6 bg-white rounded-full shadow-md transform 
+          transition-transform duration-500 ease-in-out
+          ${darkMode ? 'translate-x-6' : 'translate-x-0'}`}
+      />
     </button>
   );
 };
