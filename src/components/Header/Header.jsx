@@ -1,12 +1,14 @@
 import {Link, NavLink} from 'react-router-dom'
 import DarkModeToggle from '../../DarkModeToggle';
 import { useDarkMode } from '../../DarkModeContext';
+import { useState } from 'react';
 
 export default function Header() {
     const { darkMode } = useDarkMode();
+    const [navOpen, setNavOpen] = useState(false)
     return (
         <header className={`${darkMode?" bg-black":"bg-white"} shadow sticky z-50 top-0`}>
-            <nav className= {`px-4 lg:px-6 py-2.5`}>
+            <nav className= {`px-4 lg:px-6 pt-2.5`}>
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
                         <img
@@ -30,6 +32,9 @@ export default function Header() {
                         </Link>
                         <DarkModeToggle />
                     </div>
+
+                    {/* Desktop Version */}
+
                     <div
                         className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
                         id="mobile-menu-2"
@@ -66,6 +71,58 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
+                                <NavLink
+                                to="/github"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : `${darkMode?" text-white":"text-gray-700"}`} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Profile
+                                </NavLink>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                {/* Mobile Version */}
+                
+                <hr className="w-full" />
+                <div
+                        className="justify-between items-center w-full flex order-1 lg:hidden"
+                        id="mobile-menu-2"
+                    >
+                        <ul className="flex flex-row font-medium space-x-8 mt-0 w-full">
+                            <li className="w-auto">
+                                <NavLink
+                                to="/"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : `${darkMode?" text-white":"text-gray-700"}`} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className="w-auto">
+                                <NavLink
+                                to="/about"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : `${darkMode?" text-white":"text-gray-700"}`} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    About
+                                </NavLink>
+                            </li>
+                            <li className="w-auto">
+                                <NavLink
+                                to="/contact"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : `${darkMode?" text-white":"text-gray-700"}`} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Contact
+                                </NavLink>
+                            </li>
+                            <li className="w-auto">
                                 <NavLink
                                 to="/github"
                                     className={({isActive}) =>
