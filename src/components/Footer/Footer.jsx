@@ -4,7 +4,7 @@ import { useDarkMode } from '../../DarkModeContext';
 export default function Footer() {
     const { darkMode } = useDarkMode();
     return (
-        <footer className={`${darkMode?" bg-black":" bg-white"}" border-y"`}>
+        <footer className={`${darkMode ? " bg-black" : " bg-white"}" border-y"`}>
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
@@ -71,7 +71,7 @@ export default function Footer() {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className={`text-sm  ${darkMode?" text-white":"text-gray-500"} sm:text-center`}>
+                    <span className={`text-sm  ${darkMode ? " text-white" : "text-gray-500"} sm:text-center`}>
                         © 2023
                         <a href="https://hiteshchoudhary.com/" className="hover:underline">
                             hiteshchoudhary
@@ -108,8 +108,8 @@ export default function Footer() {
                             <span className="sr-only">Discord community</span>
                         </Link>
                         <Link to="#">
-                            <svg className="w-4 h-4" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"/>
+                            <svg viewBox="0 0 309.309 300.25" className="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 184.111 127.15 L 299.277 0 L 271.996 0 L 171.955 110.38 L 92.112 0 L 0 0 L 120.765 166.93 L 0 300.25 L 27.281 300.25 L 132.859 183.66 L 217.197 300.25 L 309.309 300.25 M 37.127 19.54 L 79.039 19.54 L 271.976 281.67 L 230.054 281.67"  transform="matrix(1, 0, 0, 1, 0, 1.4210854715202004e-14)"/>
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
