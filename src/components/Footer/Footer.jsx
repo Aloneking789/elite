@@ -4,7 +4,7 @@ import { useDarkMode } from '../../DarkModeContext';
 export default function Footer() {
     const { darkMode } = useDarkMode();
     return (
-        <footer className={`${darkMode?" bg-black":" bg-white"}" border-y"`}>
+        <footer className={`${darkMode ? " bg-black" : " bg-white"}" border-y"`}>
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
@@ -71,7 +71,7 @@ export default function Footer() {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className={`text-sm  ${darkMode?" text-white":"text-gray-500"} sm:text-center`}>
+                    <span className={`text-sm  ${darkMode ? " text-white" : "text-gray-500"} sm:text-center`}>
                         © 2023
                         <a href="https://hiteshchoudhary.com/" className="hover:underline">
                             hiteshchoudhary
@@ -108,18 +108,8 @@ export default function Footer() {
                             <span className="sr-only">Discord community</span>
                         </Link>
                         <Link to="#">
-                            <svg
-                                className="w-4 h-4"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor"
-                                viewBox="0 0 20 17"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                                    clip-rule="evenodd"
-                                />
+                            <svg viewBox="0 0 309.309 300.25" className="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 184.111 127.15 L 299.277 0 L 271.996 0 L 171.955 110.38 L 92.112 0 L 0 0 L 120.765 166.93 L 0 300.25 L 27.281 300.25 L 132.859 183.66 L 217.197 300.25 L 309.309 300.25 M 37.127 19.54 L 79.039 19.54 L 271.976 281.67 L 230.054 281.67"  transform="matrix(1, 0, 0, 1, 0, 1.4210854715202004e-14)"/>
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
