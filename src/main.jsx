@@ -13,6 +13,7 @@ import About from "./components/About/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import User from "./components/User/User.jsx";
 import Github from "./components/Github/Github.jsx";
+import Members from "./components/Members/Members.jsx";
 import { DarkModeProvider } from "./DarkModeContext.jsx";
 
 // const router = createBrowserRouter([
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="user/:userid" element={<User />} />
       <Route path="github" element={<Github />} />
+      <Route path="members" element={<Members />} />
     </Route>
   )
 );
